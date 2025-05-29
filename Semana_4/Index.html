@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Calificaciones</title>
+</head>
+<body>
+    <!-- campo de entrada para calificaciones -->
+    <h2>Ingresar Calificación</h2>
+    <input type="text" id="calificacion" placeholder="Calificación (0-10)">
+    <button onclick="agregarCalificacion()">Agregar Calificación</button>
+
+    <!-- boton para calcular promedio -->
+    <button onclick="calcularPromedio()">Calcular Promedio</button>
+
+    <!-- mostrar calificaciones -->
+    <h2>Calificaciones Ingresadas</h2>
+    <ol id="listaCalificaciones"></ol>
+
+    <!-- mostrar promedio -->
+    <h2>Resultado</h2>
+    <p>Promedio: <span id="promedio">0</span></p>
+    <p id="resultado">-</p>
+
+    <script src="Calificaciones.js"></script>
+</body>
+</html>

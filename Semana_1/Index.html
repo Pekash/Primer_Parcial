@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca PUCESI</title>
+</head>
+
+<body>
+    <!-- titulo de la pagina -->
+    <h1>Biblioteca PUCESI</h1>
+
+    <!-- principio de la pagina -->
+    <h2>Página Principal</h2>
+    <p>Bienvenido a la biblioteca PUCESI</p>
+
+    <!-- navegacion -->
+    <h3>Navegación</h3>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#agregar">Agregar Libros</a></li>
+        <li><a href="#catalogo">Ver Catálogo</a></li>
+    </ul>
+
+    <!-- linea horizontal -->
+    <hr>
+
+    <!-- inicio -->
+    <section id="inicio">
+        <h3>Información de la Biblioteca</h3>
+        <p>Gestión de libros</p>
+        <p>Aquí consultas y agregas libros al catálogo</p>
+    </section>
+
+    <hr>
+
+    <section id="agregar">
+        <h3>Agregar Nuevo Libro</h3>
+        <form>
+            <p>
+                <label>Título del libro:</label><br>
+                <input type="text" name="titulo" required>
+            </p>
+
+            <p>
+                <label>Autor:</label><br>
+                <input type="text" name="autor" required>
+            </p>
+
+            <p>
+                <label>Año de publicación:</label><br>
+                <input type="number" name="anio" min="1000" max="2024">
+            </p>
+
+            <p>
+                <label>Género:</label><br>
+                <select name="genero">
+                    <option value="ficcion">Ficción</option>
+                    <option value="no-ficcion">No ficción</option>
+                    <option value="ciencia">Ciencia</option>
+                    <option value="historia">Historia</option>
+                    <option value="biografia">Biografía</option>
+                    <option value="educacion">Educación</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" value="Agregar Libro">
+                <input type="reset" value="Limpiar">
+            </p>
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="catalogo">
+        <h3>Catálogo de Libros</h3>
+        <p>Lista de libros disponibles:</p>
+
+        <table border="1">
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Año</th>
+                <th>Género</th>
+            </tr>
+            <tr>
+                <td>Juego de tronos</td>
+                <td>George R.R. Martin</td>
+                <td>1996</td>
+                <td>Ficción</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+</body>
+
+</html>
