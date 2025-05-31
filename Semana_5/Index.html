@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Semana 5</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <h1 id="titulo">Semana 5</h1>
+    <div class="container">
+        <!-- sistema de calificaciones -->
+        <div class="sistema" id="calificaciones">
+            <!-- entrada de calificaciones -->
+            <h2>Ingresar Calificación</h2>
+            <input type="text" id="calificacion" placeholder="Calificación (0-10)">
+            <button onclick="agregarCalificacion()">Agregar Calificación</button>
+
+            <!-- boton para calcular promedio -->
+            <button onclick="calcularPromedio()">Calcular Promedio</button>
+
+            <!-- mostrar calificaciones -->
+            <h2>Calificaciones Ingresadas</h2>
+            <ol id="listaCalificaciones"></ol>
+
+            <!-- mostrar promedio -->
+            <h2>Resultado</h2>
+            <p>Promedio: <span id="promedio">0</span></p>
+            <p id="resultado">-</p>
+        </div>
+
+        <!-- sistema de Collatz -->
+        <div class="sistema" id="collatz">
+            <h2>Secuencia de Collatz</h2>
+            <label for="numeroCollatz">Ingrese un número:</label>
+            <input type="number" id="numeroCollatz" placeholder="Número" min="1">
+            <button onclick="calcularCollatz()" type="button">Calcular Collatz</button>
+            <h2>Resultado</h2>
+            <div id="resultadoCollatz"></div>
+        </div>
+
+        <!-- sistema edad -->
+        <div class="sistema" id="edad">
+            <h2>Validación de Edad</h2>
+            <!-- contenido del sistema edad -->
+            <label for="inputEdad">Ingrese su edad:</label>
+            <input type="number" id="inputEdad" placeholder="Edad" min="0" max="120">
+            <button onclick="validarEdad()" type="button">Validar Edad</button>
+            <h2>Resultado</h2>
+            <div id="resultadoEdad"></div>
+        </div>
+    </div>
+
+    <script src="Funciones.js"></script>
+</body>
+
+</html>

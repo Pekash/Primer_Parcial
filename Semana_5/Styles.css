@@ -1,0 +1,96 @@
+/* estilo de la pagina */
+h1 {
+    color: white;
+    text-align: center;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #161717;
+}
+
+/* Contenedor principal con grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Estilos base para cada sistema */
+.sistema {
+    padding: 15px;
+    border-radius: 9px;
+    background-color: #f0d2e2ee;
+    border: 2px solid #b20000;
+    transition: transform 0.3s ease;
+}
+
+.sistema:hover {
+    transform: translateY(-5px);
+}
+
+/* estilo calificaciones */
+#calificaciones {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+#calificaciones input[type="text"] {
+    border-radius: 9px;
+    border: 2px solid #000000;
+    background-color: #ffa3e8e3;
+    padding: 3px;
+}
+
+#calificaciones button {
+    border-radius: 9px;
+    border: 2px solid #000000;
+    background-color: #00d9ff82;
+    padding: 3px;
+}
+
+/* estilo Collatz */
+#collatz {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#collatz input[type="number"] {
+    border-radius: 9px;
+    border: 2px solid #ffffff;
+    background-color: #000000e3;
+    color: red;
+    padding: 3px;
+}
+
+#collatz button {
+    border-radius: 9px;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    color: #ff0000;
+    padding: 3px;
+}
+
+/* estilo edad */
+#edad {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+#edad input[type="number"] {
+    border-radius: 9px;
+    border: 2px solid #ffffff;
+    background-color: #a0a0a0e3;
+    color: red;
+    padding: 3px;
+}
+
+#edad button {
+    border-radius: 9px;
+    border: 2px solid #ffffff;
+    background-color: #a0a0a0e3;
+    color: #ff0000;
+    padding: 3px;
+}
